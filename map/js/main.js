@@ -4,7 +4,7 @@
 	    var gl = L.mapboxGL({
 	        attribution: '<a href="https://www.maptiler.com/license/maps/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>',
 	        accessToken: 'not-needed',
-	    	style: 'https://maps.tilehosting.com/styles/streets/style.json?key=rGrAfZbuIGB8zzQBJ6BY'
+	    	style: 'https://maps.tilehosting.com/c/a761b693-6e69-47a8-86ed-80c04a3546f3/styles/streets/style.json?key=rGrAfZbuIGB8zzQBJ6BY'
 	    }).addTo(map);
 
 	    function onCountryMouseOut(e){
