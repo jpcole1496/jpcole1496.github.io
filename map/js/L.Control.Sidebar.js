@@ -3,7 +3,7 @@ L.Control.Sidebar = L.Control.extend({
     includes: (L.Evented.prototype || L.Mixin.Events),
 
     options: {
-        closeButton: false,
+        closeButton: true,
         position: 'left',
         autoPan: true,
     },

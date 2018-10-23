@@ -90,4 +90,3 @@
 		setTimeout(function () {
 		    sidebar.show();
 		}, 500);
-		
