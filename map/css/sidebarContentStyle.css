@@ -1,18 +1,17 @@
-
-.header {
-	/*border-style: solid;
-	border-color: black;
-	border-width: 1px*/
-	width: 100%;
-	margin: auto;
-	padding: 10px 0px 0px 0px;
+.newsSet > div {
+	border-bottom-style: solid;
+	border-width: 1px;
+	border-color: gray;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
-.header img {
+.storySegment img {
 	float: left;
 	padding-right: 20px;
+	vertical-align: middle;
 }
 
-.header h1 {
-	position: relative;
+.storySegment h4 {
+	position: sticky;
 }

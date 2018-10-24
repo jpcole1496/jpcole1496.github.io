@@ -35,10 +35,10 @@ function setup(){
 		newsSet.className = "newsSet";
 
 		for(let i = 0; i < data.articles.length; i++){
-			h.push(document.createElement("H3"));
+			h.push(document.createElement("H4"));
 			img.push(document.createElement("IMG"));
 			storySegment.push(document.createElement("DIV"));
-			storySegment[i].className = "header";
+			storySegment[i].className = "storySegment";
 
 			img[i].src = data.articles[i].urlToImage;
 			img[i].height = "50";
