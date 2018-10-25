@@ -20,7 +20,7 @@ function setup(){
 		var h1 = document.createElement("H1");
 		h1.appendChild(document.createTextNode(heading));
 		headingDiv.appendChild(h1);
-		headingDiv.appendChild(document.createElement("HR"));
+		//headingDiv.appendChild(document.createElement("HR"));
 		sc.appendChild(headingDiv);
 	}
 
@@ -29,29 +29,36 @@ function setup(){
 		
 		var h = [];
 		var img = [];
+		var noImageStories = [];
 
-		var storySegment = []
+		var storySegment = [];
 		var newsSet = document.createElement("DIV");
 		newsSet.className = "newsSet";
 
 		for(let i = 0; i < data.articles.length; i++){
-			h.push(document.createElement("H4"));
+			h.push(document.createElement("H3"));
 			img.push(document.createElement("IMG"));
 			storySegment.push(document.createElement("DIV"));
 			storySegment[i].className = "storySegment";
 
 			img[i].src = data.articles[i].urlToImage;
-			img[i].height = "50";
+			//img[i].height = "300";
+			//img.alt = "centered image";
 
 			h[i].appendChild(document.createTextNode(data.articles[i].title));
 			if(data.articles[i].urlToImage != null){
 
 				storySegment[i].appendChild(img[i]);
+				storySegment[i].appendChild(h[i]);
+				newsSet.appendChild(storySegment[i]);
+			}else{
+				storySegment[i].appendChild(h[i])
+				noImageStories.push(storySegment[i]);
 			}
+		}
 
-			storySegment[i].appendChild(h[i]);
-			newsSet.appendChild(storySegment[i]);
-
+		for (let i = 0; i < noImageStories.length; i++){
+			newsSet.appendChild(noImageStories[i]);
 		}
 		sc.appendChild(newsSet);
 

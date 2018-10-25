@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 10px;
+  /*padding: 10px;*/
   z-index: 2000; }
   .leaflet-sidebar.left {
     left: -500px;
@@ -26,7 +26,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 8px 24px;
+    /*padding: 8px 24px;*/
     font-size: 1.1em;
     background: white;
     /*opacity: 0.4; */
