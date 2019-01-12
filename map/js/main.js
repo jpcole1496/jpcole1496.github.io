@@ -1,4 +1,3 @@
-		
 
 		var map = L.map('map').setView([25.886319, 17.201510], 3);
 	    var gl = L.mapboxGL({
@@ -30,7 +29,9 @@
 
 		function onCountryClick(e){
 		//callback for clicking inside a polygon
-			sidebar.toggle();
+		
+			generateNews(e.target.feature.properties.NAME, e.target.feature.properties.ISO2);
+			
 		}
 
 		function onCountryHighLight(e){
@@ -48,8 +49,6 @@
 				layer.bringToFront();
 			}
 		 
-			var countryName = e.target.feature.properties.name;
-			var countryCode = e.target.feature.properties.iso_a2;
 		//callback when mouse enters a country polygon goes here, for additional actions
 		}
 	   
